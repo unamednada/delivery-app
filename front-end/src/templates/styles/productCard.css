@@ -1,0 +1,99 @@
+.product-card {
+  align-items: center;
+  background-color: white;
+  border: 1px solid #d4d6d6;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 2px 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  justify-content: space-between;
+  text-align: center;
+  transform: translateY(0);
+  transition: 0.5s;
+  width: 17vmax;
+}
+
+.product-card__price-image {
+  height: 190px;
+  width: 200px;
+}
+
+.product-card__image {
+  height: 90%;
+  object-fit: contain;
+  width: 90%;
+}
+
+.product-card__price {
+  background: linear-gradient(90deg, rgba(3, 107, 82, 1) 29%, white 100%);
+  color: white;
+  font-weight: 800;
+  margin-left: 0.5rem;
+  padding: 0.3rem;
+  text-align: left;
+}
+
+.product-card__name-qtdy {
+  background-color: #eaf1ef;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.product-card__name {
+  margin: 0;
+}
+
+.product-card__input {
+  height: 1.8rem;
+  text-align: center;
+  width: 4rem;
+}
+
+.product-card__qtdy {
+  background-color: rgba(3, 107, 82, 1);
+  color: white;
+  height: 1.8rem;
+  width: 3rem;
+}
+
+.product-card__qtdy--subtraction {
+  border-radius: 5px 0 0 5px;
+  margin-right: -15px;
+}
+
+.product-card__qtdy--sum {
+  border-radius: 0 5px 5px 0;
+  margin-left: -15px;
+}
+
+.product-card:hover {
+  box-shadow: rgba(206, 226, 211, 0.712) 0 1px 70px;
+  transform: translateY(-2px);
+}
+
+.product-card__qtdy:hover {
+  background-color: #2fc18c;
+  color: #421981;
+  cursor: pointer;
+}
+
+.product-card__image:hover {
+  cursor: zoom-in;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+
+.product-card__qtdy--subtraction:disabled {
+  background-color: #036b52;
+  color: white;
+  cursor: not-allowed;
+}

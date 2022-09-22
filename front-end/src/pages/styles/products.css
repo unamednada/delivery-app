@@ -1,0 +1,54 @@
+.container-page-products {
+  align-items: center;
+  background-color: rgb(222, 224, 222);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.product-card-container__card {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 3rem;
+  justify-content: flex-start;
+  margin: 2rem 0;
+  width: 80vw;
+}
+
+.container-page-products__total-price {
+  background-color: #085241;
+  border-radius: 10px 0 0;
+  bottom: 1rem;
+  box-shadow: rgb(47, 14, 126) 0 2px 5px;
+  display: flex;
+  height: 2rem;
+  justify-content: flex-start;
+  padding: 0.3rem;
+  position: fixed;
+  right: 0;
+  width: 10%;
+}
+
+.total-price__img {
+  width: 20%;
+}
+
+.total-price__button {
+  background-color: #08524100;
+  border: 0;
+  color: white;
+  font-family: Poppins , sans-serif , Arial , Helvetica;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.total-price__button:disabled {
+  cursor: not-allowed;
+}
+
+.total-price__button:enabled {
+  cursor: pointer;
+}
+
